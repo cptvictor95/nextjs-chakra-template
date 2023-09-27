@@ -1,12 +1,11 @@
 "use client";
 
 import Placeholder from "@/components/layout/Placeholder";
-import { PageLayout } from "@/layouts/PageLayout";
 import { Heading } from "@chakra-ui/react";
 
 const Projects = () => {
   return (
-    <PageLayout>
+    <>
       <Heading as="h1" size="lg">
         About
       </Heading>
@@ -16,7 +15,8 @@ const Projects = () => {
           About the page
         </Heading>
       </Placeholder>
-    </PageLayout>
+    </>
   );
 };
+
 export default Projects;
