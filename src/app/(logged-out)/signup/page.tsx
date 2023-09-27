@@ -3,7 +3,6 @@
 import { ConfirmPasswordField } from "@/components/signInPage/ConfirmPasswordField";
 import { OAuthButtonGroup } from "@/components/signInPage/OAuthButtonGroup";
 import { PasswordField } from "@/components/signInPage/PasswordField";
-import { PageLayout } from "@/layouts/PageLayout";
 import {
   Box,
   Button,
@@ -25,7 +24,7 @@ import React from "react";
 const SignUp = () => {
   const { push } = useRouter();
   return (
-    <PageLayout>
+    <>
       <Container
         maxW="lg"
         py={{ base: "4", md: "8" }}
@@ -100,7 +99,7 @@ const SignUp = () => {
           </Box>
         </Stack>
       </Container>
-    </PageLayout>
+    </>
   );
 };
 

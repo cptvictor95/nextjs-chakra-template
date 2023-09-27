@@ -2,7 +2,6 @@
 
 import { OAuthButtonGroup } from "@/components/signInPage/OAuthButtonGroup";
 import { PasswordField } from "@/components/signInPage/PasswordField";
-import { PageLayout } from "@/layouts/PageLayout";
 import {
   Container,
   Stack,
@@ -24,7 +23,7 @@ const SignInPage = () => {
   const { push } = useRouter();
 
   return (
-    <PageLayout>
+    <>
       <Container
         maxW="lg"
         py={{ base: "4", md: "12" }}
@@ -73,6 +72,7 @@ const SignInPage = () => {
                 <Button variant="primary">Sign in</Button>
                 <HStack>
                   <Divider />
+
                   <Text fontSize="sm" whiteSpace="nowrap" color="muted">
                     or continue with
                   </Text>
@@ -84,7 +84,7 @@ const SignInPage = () => {
           </Box>
         </Stack>
       </Container>
-    </PageLayout>
+    </>
   );
 };
 export default SignInPage;
