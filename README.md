@@ -1,21 +1,67 @@
-# Factree templates
+# Factree Templates: Application
 
-This is a base layout template for web applications with NextJS and ChakraUI.
+Welcome to Factree's Application - a robust white-label template for web applications built with Next.js and Chakra UI.
 
-## Getting Started
+![Factree Logo](path-to-your-logo-if-any.png)
 
-First, install the project dependencies by running:
+## 🚀 Getting Started
+
+### Prerequisites
+
+Ensure you have the following installed on your machine:
+
+- [Node.js](https://nodejs.org/) - 14.x or higher
+- [Yarn](https://yarnpkg.com/) - 1.x or higher
+
+### Installation & Development
+
+1. Clone the repository:
 
 ```bash
-yarn
+git clone https://github.com/cptvictor95/nextjs-chakra-template.git
 ```
 
-After installing the dependencies, run the development server:
+2. Navigate into the directory:
 
 ```bash
-yarn dev
+cd nextjs-chakra-template
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Install the project dependencies:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm install
+```
+
+4. Start the development server:
+
+```bash
+pnpm dev
+```
+
+Open your browser and visit [http://localhost:3000](http://localhost:3000) to view the running application. Enjoy hot-reloading as you develop.
+
+## ✏️ Editing & Customization
+
+Start by modifying the `app/page.tsx`. This is the main page of your application, and any changes will reflect immediately during development.
+
+## 🛠 Tech Stack
+
+This template is crafted using the following technologies:
+
+- [Next.js](https://nextjs.org/) for SSR React applications
+- [Chakra UI](https://chakra-ui.com/) for responsive UI design
+- [TypeScript](https://www.typescriptlang.org/) for static type checking
+- [Emotion](https://emotion.sh/docs/introduction) for styling components
+- [Framer Motion](https://www.framer.com/api/motion/) for UI animations
+- [React Icons](https://react-icons.github.io/react-icons/) for scalable vector icons
+
+... and more! Dive into the `package.json` for detailed dependencies.
+
+## 📜 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## 🌐 About Factree
+
+Factree is dedicated to providing quality templates and development resources to the community. Visit [our website](your-website-link-here) for more details.
