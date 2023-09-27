@@ -1,7 +1,6 @@
 "use client";
 
-import theme from "@/theme";
-import { ChakraProvider } from "@chakra-ui/react";
+import { ChakraProvider } from "@/config/ChakraProvider";
 import { Red_Hat_Display } from "next/font/google";
 
 const redHatDisplay = Red_Hat_Display({
@@ -24,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body className={redHatDisplay.className}>
-        <ChakraProvider theme={theme}>{children}</ChakraProvider>
+        <ChakraProvider>{children}</ChakraProvider>
       </body>
     </html>
   );
