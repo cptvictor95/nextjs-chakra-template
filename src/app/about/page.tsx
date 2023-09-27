@@ -1,8 +1,8 @@
 "use client";
 
+import Placeholder from "@/components/layout/Placeholder";
+import { PageLayout } from "@/layouts/PageLayout";
 import { Heading } from "@chakra-ui/react";
-import Placeholder from "../components/layout/Placeholder";
-import { PageLayout } from "../layouts/PageLayout";
 
 const Projects = () => {
   return (

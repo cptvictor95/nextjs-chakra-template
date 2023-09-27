@@ -1,5 +1,8 @@
 "use client";
 
+import { OAuthButtonGroup } from "@/components/loginPage/OAuthButtonGroup";
+import { PasswordField } from "@/components/loginPage/PasswordField";
+import { PageLayout } from "@/layouts/PageLayout";
 import {
   Container,
   Stack,
@@ -16,9 +19,6 @@ import {
 } from "@chakra-ui/react";
 import { useRouter } from "next/navigation";
 import React from "react";
-import { OAuthButtonGroup } from "../components/loginPage/OAuthButtonGroup";
-import { PasswordField } from "../components/loginPage/PasswordField";
-import { PageLayout } from "../layouts/PageLayout";
 
 const Login = () => {
   const { push } = useRouter();

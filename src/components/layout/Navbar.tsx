@@ -8,14 +8,18 @@ import {
   Heading,
   HStack,
   IconButton,
-  Text,
+  Menu,
+  MenuButton,
+  MenuItem,
+  MenuList,
   useBreakpointValue,
 } from "@chakra-ui/react";
 import { useRouter } from "next/navigation";
 import { FiMenu } from "react-icons/fi";
+import { HiMenuAlt1 } from "react-icons/hi";
 
 export const Navbar = () => {
-  const router = useRouter();
+  const { push } = useRouter();
   const isDesktop = useBreakpointValue({ base: false, lg: true });
 
   return (
@@ -26,6 +30,7 @@ export const Navbar = () => {
             <Heading as="h1" size="md">
               Logo
             </Heading>
+
             {isDesktop ? (
               <Flex justify="space-between" flex="1" w="100%">
                 <ButtonGroup variant="link" spacing="8">
@@ -39,33 +44,37 @@ export const Navbar = () => {
                       href: "/about",
                     },
                   ].map((item) => (
-                    <Button
-                      key={item.title}
-                      onClick={() => router.push(item.href)}
-                    >
+                    <Button key={item.title} onClick={() => push(item.href)}>
                       {item.title}
                     </Button>
                   ))}
                 </ButtonGroup>
 
                 <HStack spacing="3">
-                  <Button
-                    variant="outline"
-                    onClick={() => router.push("/signup")}
-                  >
+                  <Button variant="outline" onClick={() => push("/signup")}>
                     Sign up
                   </Button>
-                  <Button variant="solid" onClick={() => router.push("/login")}>
+                  <Button variant="solid" onClick={() => push("/login")}>
                     Sign in
                   </Button>
                 </HStack>
               </Flex>
             ) : (
-              <IconButton
-                variant="ghost"
-                icon={<FiMenu fontSize="1.25rem" />}
-                aria-label="Open Menu"
-              />
+              <Menu>
+                <MenuButton
+                  display={{ base: "grid", md: "none" }}
+                  as={IconButton}
+                  variant="outline"
+                  aria-label="Open Menu"
+                  placeItems="center"
+                  icon={<HiMenuAlt1 fontSize="1.25rem" />}
+                />
+
+                <MenuList visibility={{ base: "visible", md: "hidden" }}>
+                  <MenuItem onClick={() => push("/signup")}>Sign up</MenuItem>
+                  <MenuItem onClick={() => push("/signin")}>Sign in</MenuItem>
+                </MenuList>
+              </Menu>
             )}
           </HStack>
         </Container>

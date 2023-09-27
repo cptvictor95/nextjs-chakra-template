@@ -1,6 +1,8 @@
 import { extendTheme } from "@chakra-ui/react";
 import { Button } from "./components/Button";
 import { IconButton } from "./components/IconButton";
+import { baseColor } from "./baseColor";
+import { Menu } from "./components/Menu";
 
 const theme = extendTheme({
   styles: {
@@ -10,14 +12,15 @@ const theme = extendTheme({
         padding: 0,
         boxSizing: "border-box",
         scrollBehavior: "smooth",
-        color: "gray.100",
-        bg: "gray.900",
+        color: `${baseColor}.100`,
+        bg: `${baseColor}.900`,
       },
     },
   },
   components: {
     Button,
     IconButton,
+    Menu,
   },
 });
 
