@@ -55,7 +55,7 @@ export const Navbar = () => {
                 <Button variant="outline" onClick={() => push("/signup")}>
                   Sign up
                 </Button>
-                <Button variant="solid" onClick={() => push("/login")}>
+                <Button variant="solid" onClick={() => push("/signin")}>
                   Sign in
                 </Button>
               </HStack>

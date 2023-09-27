@@ -1,7 +1,7 @@
 "use client";
 
-import { OAuthButtonGroup } from "@/components/loginPage/OAuthButtonGroup";
-import { PasswordField } from "@/components/loginPage/PasswordField";
+import { OAuthButtonGroup } from "@/components/signInPage/OAuthButtonGroup";
+import { PasswordField } from "@/components/signInPage/PasswordField";
 import { PageLayout } from "@/layouts/PageLayout";
 import {
   Container,
@@ -20,7 +20,7 @@ import {
 import { useRouter } from "next/navigation";
 import React from "react";
 
-const Login = () => {
+const SignInPage = () => {
   const { push } = useRouter();
 
   return (
@@ -87,4 +87,4 @@ const Login = () => {
     </PageLayout>
   );
 };
-export default Login;
+export default SignInPage;

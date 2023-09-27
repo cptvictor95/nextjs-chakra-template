@@ -1,8 +1,8 @@
 "use client";
 
-import { ConfirmPasswordField } from "@/components/loginPage/ConfirmPasswordField";
-import { OAuthButtonGroup } from "@/components/loginPage/OAuthButtonGroup";
-import { PasswordField } from "@/components/loginPage/PasswordField";
+import { ConfirmPasswordField } from "@/components/signInPage/ConfirmPasswordField";
+import { OAuthButtonGroup } from "@/components/signInPage/OAuthButtonGroup";
+import { PasswordField } from "@/components/signInPage/PasswordField";
 import { PageLayout } from "@/layouts/PageLayout";
 import {
   Box,
@@ -42,9 +42,9 @@ const SignUp = () => {
                 <Button
                   variant="link"
                   colorScheme="blue"
-                  onClick={() => push("/signup")}
+                  onClick={() => push("/signin")}
                 >
-                  Sign up
+                  Sign in
                 </Button>
               </HStack>
             </Stack>
