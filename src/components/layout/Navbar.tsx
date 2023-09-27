@@ -13,6 +13,7 @@ import {
   MenuItem,
   MenuList,
 } from "@chakra-ui/react";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { HiMenuAlt1 } from "react-icons/hi";
 
@@ -45,17 +46,17 @@ export const Navbar = () => {
                     href: "/about",
                   },
                 ].map((item) => (
-                  <Button key={item.title} onClick={() => push(item.href)}>
+                  <Button as={Link} key={item.title} href={item.href}>
                     {item.title}
                   </Button>
                 ))}
               </ButtonGroup>
 
               <HStack spacing="3">
-                <Button variant="outline" onClick={() => push("/signup")}>
+                <Button as={Link} variant="outline" href="/signup">
                   Sign up
                 </Button>
-                <Button variant="solid" onClick={() => push("/signin")}>
+                <Button as={Link} href="/signin">
                   Sign in
                 </Button>
               </HStack>
@@ -72,8 +73,12 @@ export const Navbar = () => {
               />
 
               <MenuList visibility={{ base: "visible", md: "hidden" }}>
-                <MenuItem onClick={() => push("/signup")}>Sign up</MenuItem>
-                <MenuItem onClick={() => push("/signin")}>Sign in</MenuItem>
+                <MenuItem as={Link} href="/signup">
+                  Sign up
+                </MenuItem>
+                <MenuItem as={Link} href="/signin">
+                  Sign in
+                </MenuItem>
               </MenuList>
             </Menu>
           </HStack>

@@ -1,5 +1,3 @@
-"use client";
-
 import { ChakraProvider } from "@/config/ChakraProvider";
 import { Red_Hat_Display } from "next/font/google";
 
