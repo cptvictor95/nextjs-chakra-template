@@ -16,6 +16,7 @@ import {
   Text,
   Box,
 } from "@chakra-ui/react";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React from "react";
 
@@ -38,9 +39,10 @@ const SignInPage = () => {
               <HStack spacing="1" justify="center">
                 <Text color="muted">Dont have an account?</Text>
                 <Button
+                  as={Link}
                   variant="link"
                   colorScheme="blue"
-                  onClick={() => push("/signup")}
+                  href="/signup"
                 >
                   Sign up
                 </Button>
