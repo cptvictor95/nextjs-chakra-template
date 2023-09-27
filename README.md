@@ -1,3 +1,7 @@
+# Factree templates
+
+This is a base layout template for web applications with NextJS and ChakraUI.
+
 ## Getting Started
 
 First, install the project dependencies by running:
