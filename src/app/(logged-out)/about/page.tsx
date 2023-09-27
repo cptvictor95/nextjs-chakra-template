@@ -10,6 +10,7 @@ const Projects = () => {
       <Heading as="h1" size="lg">
         About
       </Heading>
+
       <Placeholder>
         <Heading as="h2" size="md">
           About the page
