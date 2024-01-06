@@ -10,7 +10,7 @@ const Home = () => {
         Home
       </Heading>
 
-      <Placeholder>Your content here</Placeholder>
+      <Placeholder>Hero section</Placeholder>
     </PageLayout>
   );
 };

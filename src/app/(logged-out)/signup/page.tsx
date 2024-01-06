@@ -80,21 +80,24 @@ const SignUp = () => {
 
                 <ConfirmPasswordField />
               </Stack>
+
               <HStack justify="space-between">
                 <Checkbox defaultChecked>Remember me</Checkbox>
-                <Button variant="link" colorScheme="blue" size="sm">
-                  Forgot password?
-                </Button>
               </HStack>
+
               <Stack spacing="6">
-                <Button variant="primary">Sign in</Button>
+                <Button variant="primary">Sign up</Button>
+
                 <HStack>
                   <Divider />
+
                   <Text fontSize="sm" whiteSpace="nowrap" color="muted">
                     or continue with
                   </Text>
+
                   <Divider />
                 </HStack>
+
                 <OAuthButtonGroup />
               </Stack>
             </Stack>

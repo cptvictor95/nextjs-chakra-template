@@ -10,11 +10,7 @@ const Projects = () => {
         About
       </Heading>
 
-      <Placeholder>
-        <Heading as="h2" size="md">
-          About the page
-        </Heading>
-      </Placeholder>
+      <Placeholder>About the company</Placeholder>
     </>
   );
 };
